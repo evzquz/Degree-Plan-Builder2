@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+.btn-group button {
+    background-color: maroon; /* Green background */
+    border: 1px solid gray; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    width: 50%; /* Set a width if needed */
+    display: block; /* Make the buttons appear below each other */
+}
+
+.btn-group button:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+    background-color: grey;
+}
+.column-left{ float: left; width: 45%; }
+.column-right{ float: right; width: 55%; }
+.somepadding{padding-bottom:50px;}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+        background-color: white;
+}
+
+th {
+    border: 2px solid black;
+    text-align: center;
+    padding: 8px;
+    background-color: grey;
+    color: black;
+}
+
+.td1 {
+    border: 0px solid white;
+    text-align: center;
+    padding: 8px;
+    background-color: white;
+    color: black;
+}
+td, tr {
+    border: 2px solid black;
+    text-align: left;
+    padding: 8px;
+        color: black;
+}
+</style>
+    <head>
+   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Create Curriculum Summary</title>
+        <link href="/LayoutScript/CSS/Style.css" rel="stylesheet" type="text/css" /> 
+        
+        <script>
+function myFunction() {
+    var checkBox = document.getElementById("myCheck");
+    var text = document.getElementById("text");
+    if (checkBox.checked == true){
+        text.style.display = "block";
+    } else {
+       text.style.display = "none";
+    }
+}
+</script>
+
+        
+        
+       
+                
+    </head>
+
+<body>
+
+<header class = "headerTop">
+         <h1 align="center">
+              DEGREE PLAN BUILDER <img src='https://s9.postimg.cc/5x43af2wv/logo.png' border='0' alt='logo'/>
+          </h1>
+          
+        </header>  
+        
+<div align="center" class="column-right">
+                <h3>Courses selected will go here</h3>
+                 _________________________________________________
+                 <br><br>
+                 <h4 class="somepadding">
+
+<table>
+        <col width = "40%"></col>
+        <col width = "30%"></col>
+        <col width = "30%"></col>
+
+
+
+  <tr>
+    <th colspan="2">CORE CURRICULUM<br>(STANDARD)*</th>
+    <th>MAJOR<br>()</th>
+    <th>OTHER REQUIREMENTS</th>
+  </tr>
+  
+  <tr>
+    <th> credits</th>
+    <th>TCCNS</th>
+    <th> credits</th>
+    <th> credits</th>
+  </tr>
+  
+  <tr>
+    <td class="td1" >Communication:</td>
+    <td class="td1"> </td>    
+    <td><%= data2[0].course_id%></td>
+    <td></td>
+  </tr>
+  
+  <tr>
+<td></td>
+    <td></td>    
+    <td> </td>
+    <td></td>
+  </tr>
+  
+  <tr>
+    <td> </td>
+    <td> </td>    
+    <td> </td>
+    <td></td>
+  </tr>
+  
+  <tr>
+    <td class="td1" >Mathematics:</td>
+    <td class="td1"> </td>    
+    <td> </td>
+    <td></td>
+  </tr>
+  
+  <tr>
+    <td> </td>
+    <td> </td>    
+    <td> </td>
+    <td></td>
+  </tr>
+  
+  <tr>
+    <td class="td1" >Life and physical sciences:</td>
+    <td class="td1"> </td>    
+    <td> </td>
+    <td></td>
+  </tr>
+  
+  <tr>
+    <td> </td>
+    <td> </td>    
+    <td></td>
+    <td></td>
+  </tr>
+  
+  <tr>
+    <td> </td>
+    <td> </td>    
+    <td> </td>
+    <td></td>
+  </tr>
+  
+    <tr>
+    <td class="td1" >Language, philosophy, and culture:</td>
+    <td class="td1"> </td>    
+    <td> </td>
+    <td></td>
+  </tr>
+  
+  <tr>
+    <td> </td>
+    <td> </td>    
+    <td> </td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td class="td1" >Creative arts:</td>
+    <td class="td1"> </td>    
+    <td> </td>
+    <td></td>
+  </tr>
+  
+  <tr>
+    <td> </td>
+    <td> </td>    
+    <td> </td>
+    <td></td>
+  </tr>
+  
+    <tr>
+    <td class="td1" >American history:</td>
+    <td class="td1"> </td>    
+    <td> </td>
+    <td></td>
+  </tr>
+  
+  <tr>
+    <td> </td>
+    <td> </td>    
+    <td> </td>
+    <td></td>
+  </tr>
+  
+  <tr>
+    <td> </td>
+    <td> </td>    
+    <td> </td>
+    <td></td>
+  </tr>
+  
+    <tr>
+    <td class="td1" >Government/political science:</td>
+    <td class="td1"> </td>    
+    <td> </td>
+    <td></td>
+  </tr>
+  
+  <tr>
+    <td> </td>
+    <td> </td>    
+    <td> </td>
+    <td></td>
+  </tr>
+  
+  <tr>
+    <td> </td>
+    <td> </td>    
+    <td> </td>
+    <td></td>
+  </tr>
+  
+    <tr>
+    <td class="td1" >Social and behavioral sciences:</td>
+    <td class="td1"> </td>    
+    <td> </td>
+    <td></td>
+  </tr>
+  
+  <tr>
+    <td> </td>
+    <td> </td>    
+    <td> </td>
+    <td></td>
+  </tr>
+  
+   <tr>
+    <td class="td1" >Institutional Options:</td>
+    <td class="td1"> </td>    
+    <td> </td>
+    <td></td>
+  </tr>
+  
+  <tr>
+    <td> </td>
+    <td> </td>    
+    <td> </td>
+    <td></td>
+  </tr>
+  
+  <tr>
+    <td> </td>
+    <td> </td>    
+    <td> </td>
+    <td></td>
+  </tr> 
+
+  
+  
+</table>
+
+
+                 </h4>
+
+			<a href="/otherReqmts" id=" ">
+			  <button class="submit">Submit
+			  </button>
+			</a>
+
+                                  <br><br><br>
+                </div>
+
+
+        
+        <div align="center" class="column-left">
+                <h3>2. Select Major Requirement Courses</h3>
+                 _________________________________________________
+		<div class="container" >
+		    <b>Choose a Department:</b>
+		</div><br>
+		<select size="1" id="Rank" title="" name="Rank">
+		    
+		    <div id="dept" class="ok">
+      <% for (var i = 0; i < data1.length; i++) {%>
+        <option id="course" value="selection">
+        <%= data1[i].deparment_name %>
+          <% } %></option>
+    </div>    
+		</select>
+
+		<br><br><br>
+		<div class="container">
+		    <b>Choose a Subject from the selected Department:</b>
+		</div><br>
+		
+		
+
+
+	<div class="container1">
+	
+			
+			<div class="selection">
+				<select>
+					
+					<div id="subj" class="">
+      <% for (var i = 0; i < data3.length; i++) {%>
+        <option id="course" value=" ">
+        <%= data3[i].course_subject_description %>
+          <% } %></option>
+    </div>    
+					
+					
+				</select>
+			</div>
+			
+
+	
+	
+	</div>
+		<br><br>
+ 
+
+               <div class="container" >
+		    <b>Choose Courses from the selected Subject:</b>
+		</div><br>
+		
+		
+		<div class="container" >
+  <div class= "component">
+
+
+
+    <div id="" class="" >
+      <% for (var i = 0; i < data2.length; i++) {%>
+        <input type="checkbox" id="myCheck" onclick="myFunction()"  value="<%= data2[i].course_id %>">
+        <%= data2[i].course_id %>
+          <% } %>
+    </div>
+
+        
+			<br><br>
+			
+
+  <button class="add-button">Add
+  </button>
+
+    
+  </div>
+
+		
+</div>
+
+ <p id="demo"></p>
+
+ 
+
+
+   
+  <script src="/create.js"></script>
+</body>
+</html>
+
